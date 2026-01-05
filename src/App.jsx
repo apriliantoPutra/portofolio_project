@@ -77,7 +77,7 @@ function App() {
     {
       name: "Mobile Development",
       icon: <FiCloud className="text-2xl" />,
-      items: ["Flutter", "React Native"],
+      items: ["Flutter"],
     },
   ];
 
