@@ -6,6 +6,7 @@ import novelProject from "./assets/novel-project.png";
 import bankSampahImage from "./assets/bank-sampah.png";
 import autentikImage from "./assets/autentik.png";
 import epalImage from "./assets/epal.png";
+import MarketPlace from "./assets/marketplace.png";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -14,15 +15,24 @@ function App() {
   const projects = [
     {
       id: 1,
-      title: "Novel Project",
+      title: "NovelApp: Cross-Platform Reading Platform",
       description:
-        "Developed a web-based novel reading platform with a multi-role system that enables authors to publish and manage their work, readers to access online novels, and administrators to oversee platform data and user management.",
-      technologies: ["Node.js", "Vue.js", "PostgreSQL", "REST API"],
+        "Engineered a full-stack web and mobile reading application. The web platform, built with Vue.js and Node.js, features a multi-role system for authors to publish/manage novels and admins to oversee platform integrity. Extended the ecosystem with a Flutter mobile app providing a synchronized reader-focused experience for accessing novels and comments. Implemented secure REST APIs for authentication and data consistency across platforms.",
+      technologies: ["Node.js", "Vue.js", "PostgreSQL", "REST API", "Flutter", "TailwindCSS"],
       image: novelProject,
       url: "https://github.com/apriliantoPutra/novel_project",
     },
     {
       id: 2,
+      title: "E-Commerce Marketplace Platform",
+      description:
+        "Developed a full-stack e-commerce marketplace website with dual-role system (User/Admin). Implemented complete shopping functionality including cart management, checkout flow, and user profile customization. Built a comprehensive admin dashboard for product/category management and user data monitoring.",
+      technologies: ["Next.js", "Node.js", "PostgreSQL", "TailwindCSS"],
+      image: MarketPlace,
+      url: "https://github.com/apriliantoPutra/marketplace.git",
+    },
+    {
+      id: 3,
       title: "Bank Sampah System",
       description: "Developed a system consisting of a mobile app and admin website to enable online waste deposits, automatic transaction recording, and provides balance based on deposited waste.",
       technologies: ["Flutter", "PHP Laravel", "Rest API", "MySQL"],
@@ -30,7 +40,7 @@ function App() {
       url: "https://github.com/apriliantoPutra/projek_ta",
     },
     {
-      id: 3,
+      id: 4,
       title: "E-Pal System Web",
       description: "Designed and implemented a reporting website for licensing of the E-Pal, an IoT-based wastewater treatment product at PT Autentik Karya Analitika.",
       technologies: ["PHP Laravel", "Tailwind CSS", "MySQL"],
@@ -38,7 +48,7 @@ function App() {
       url: "https://epal-system.autentik.co.id/",
     },
     {
-      id: 4,
+      id: 5,
       title: "Company Product Website",
       description: "Built a company website for PT Autentik Karya Analitika to showcase IoT products and improve product visibility.",
       technologies: ["PHP CodeIgniter", "Tailwind CSS", "MySQL"],
